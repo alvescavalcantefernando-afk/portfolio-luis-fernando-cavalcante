@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Luis Fernando Cavalcante</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabecalho com o menu (igual em todas as paginas) -->
+  <header>
+    <h1>Luis Fernando Cavalcante</h1>
+    <button id="btnMenu">Menu</button>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Pagina Portfolio -->
+    <section>
+      <h2>Portfólio</h2>
+      <p>Alguns trabalhos que fiz. Os dois primeiros são de uso interno da empresa, então não tem link público, só a descrição.</p>
+
+      <div class="projeto">
+        <h3>Painel de Field Service</h3>
+        <p>Painel para controlar os chamados de campo da empresa: abertura, reagendamento e fechamento dos atendimentos, com horas e custos.</p>
+        <button onclick="mostrarDetalhes('det1', this)">Ver mais</button>
+        <div class="detalhes" id="det1">
+          <ul>
+            <li>Lançamento e fechamento de chamados com cálculo de horas, custos e pontualidade.</li>
+            <li>Aba para controlar as linhas de celular (chips) da empresa.</li>
+            <li>Aba de estoque para a diretoria acompanhar o estoque atual e as movimentações.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="projeto">
+        <h3>Painel na TV do escritório</h3>
+        <p>Tela que fica na TV do escritório mostrando os chamados do dia e as configurações de equipamentos, lendo os dados direto da planilha.</p>
+        <button onclick="mostrarDetalhes('det2', this)">Ver mais</button>
+        <div class="detalhes" id="det2">
+          <ul>
+            <li>Mapa com os chamados do dia, com cor diferente para cada status.</li>
+            <li>Colunas por técnico com os equipamentos em configuração.</li>
+            <li>Os dados vêm da planilha que fica na rede, usando um script em Python.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="projeto">
+        <h3>Este site</h3>
+        <p>Portfólio feito para a atividade prática da disciplina Fundamentos da Programação Web.</p>
+        <p><a href="https://github.com/alvescavalcantefernando-afk/portfolio-luis-fernando-cavalcante" target="_blank">Ver o código no GitHub</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodape -->
+  <footer>
+    <p>Luis Fernando Alves Cavalcante | RU 5594180</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

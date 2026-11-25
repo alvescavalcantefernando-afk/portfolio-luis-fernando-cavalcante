@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Luis Fernando Cavalcante</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabecalho com o menu (igual em todas as paginas) -->
+  <header>
+    <h1>Luis Fernando Cavalcante</h1>
+    <button id="btnMenu">Menu</button>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Pagina Contato -->
+    <section>
+      <h2>Contato</h2>
+      <p>Para falar comigo, preencha o formulário abaixo.</p>
+
+      <!-- novalidate desliga a validacao do navegador, quem valida e o JavaScript -->
+      <form id="formContato" novalidate>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+        <span class="erro" id="erroNome"></span>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
+        <span class="erro" id="erroEmail"></span>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem"></textarea>
+        <span class="erro" id="erroMensagem"></span>
+
+        <br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Redes</h2>
+      <p><a href="https://github.com/alvescavalcantefernando-afk" target="_blank">GitHub</a></p>
+    </section>
+  </main>
+
+  <!-- Rodape -->
+  <footer>
+    <p>Luis Fernando Alves Cavalcante | RU 5594180</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

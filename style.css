@@ -1,0 +1,158 @@
+/* Estilos do meu portfolio */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #222;
+}
+
+/* Cabecalho com o menu */
+header {
+  background-color: #1f4e79;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  font-size: 20px;
+  margin: 5px 0;
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* link da pagina que esta aberta */
+nav a.ativo {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+/* botoes do cabecalho */
+#btnMenu {
+  display: none;
+  float: right;
+}
+
+/* Conteudo */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: white;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  color: #1f4e79;
+  margin-top: 0;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Portfolio */
+.projeto {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.detalhes {
+  display: none;
+}
+
+/* Formulario */
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form textarea {
+  height: 120px;
+}
+
+.erro {
+  color: red;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Rodape */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Celular: o menu fica escondido e aparece ao clicar no botao */
+@media (max-width: 600px) {
+  #btnMenu {
+    display: inline-block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul.aberto {
+    display: block;
+  }
+
+  nav li {
+    display: block;
+    margin: 8px 0;
+  }
+}
